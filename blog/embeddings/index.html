@@ -66,11 +66,11 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p>A simple implementation of the above objectives would be logistic regression, which is nothing more than a fancy perceptron. You might be wondering: how do we get the word vectors from this process? Turns out what we're actually doing is making the network perform a <strong>fake</strong> that we training the network off of - we actually won’t use the model that’s trained. Instead, the goodies are encoded in the parameters of the neural network layers: the weights and biases of each neuron. The network’s internal representation of different words encodes the embeddings that we are looking for.</p>
 <h2>Recent Applications</h2>
 <p>Word embeddings are an idea from as early as 2003. In the nearly two decades, there has been a huge surge in its use across the machine learning landscape. From powering virtually every NLP system at Google to inspiring a slew of new models, here are some recent developments regarding word embeddings:</p>
-<h3>Reccomendation</h3>
+<h3>Recommendation</h3>
 <p>Spotify, Airbnb, etc.</p>
 <h3>Contextualization</h3>
 <p>BERT, etc.</p>
-<h2>Code</h2>
+<h2>Implementation in Python</h2>
 <h3>Pre-Trained Word Embeddings</h3>
 <p>Let’s use <strong>pre-trained word embeddings</strong> from Google (trained by reading through Google News). Using trusted pre-trained models will allow us to quickly play with word vectors as well as prototype with deep learning faster since such models already been worked well in practice.</p>
 <p>We first want to run <code class="language-text">pip install pymagnitude</code> to install the embedding format. Then we can download the pre-trained word2vec embeddings using some <code class="language-text">wget</code> magic:</p>
